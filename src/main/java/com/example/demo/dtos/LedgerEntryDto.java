@@ -14,6 +14,7 @@ public class LedgerEntryDto {
     private String transactionType; 
     private String description;
     private java.util.Date transactionDate;
+    private String test;
 }
 -la
 -la
