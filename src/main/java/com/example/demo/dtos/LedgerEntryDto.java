@@ -12,7 +12,7 @@ public class LedgerEntryDto {
     private String accountName;
     private double amount;
     private String transactionType; 
-    private String description;
+    private String descriptive;
     private java.util.Date transactionDate;
 }
 -la
