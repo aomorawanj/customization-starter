@@ -1,1 +1,88 @@
+// Company X Java Style Guide
 
+// Introduction
+// This style guide outlines the coding conventions for Java code developed at Company X.
+// It's based on standard Java conventions and best practices, with some modifications
+// to address specific needs and preferences within our organization.
+
+// Key Principles
+// * Readability: Code should be easy to understand for all team members.
+// * Maintainability: Code should be easy to modify and extend.
+// * Consistency: Adhering to a consistent style across all projects improves
+//   collaboration and reduces errors.
+// * Performance: While readability is paramount, code should be efficient.
+
+// Deviations from Standard Java Conventions (if any - explicitly mention them here)
+//
+// ## Line Length
+// * Maximum line length: 100 characters (aligning with the Python guide).
+//     * Modern screens allow for wider lines, improving code readability in many cases.
+//     * Many common patterns in our codebase, like long strings or URLs, often exceed typical limits.
+
+// ## Indentation
+// * Use 4 spaces per indentation level. (Standard Java convention)
+
+// ## Imports
+// * Group imports:
+//     * Standard Java library imports (java.*)
+//     * Related third-party library imports
+//     * Local application/library specific imports
+// * Fully qualified names or explicit imports: Generally prefer explicit imports for clarity.
+// * Import order within groups: Sort alphabetically.
+
+// ## Naming Conventions
+
+// * Variables: Use camelCase starting with a lowercase letter: `userName`, `totalCount`
+// * Constants: Use uppercase with underscores: `MAX_VALUE`, `DATABASE_NAME`
+// * Methods: Use camelCase starting with a lowercase letter: `calculateTotal()`, `processData()`
+// * Classes and Interfaces: Use PascalCase (UpperCamelCase): `UserManager`, `PaymentProcessor`, `UserService`
+// * Packages: Use lowercase: `com.companyx.utils`, `com.companyx.data`
+
+// ## Javadoc Comments
+// * Use `/** ... */` for all Javadoc comments for classes, interfaces, methods, and fields.
+// * First sentence: Concise summary of the element's purpose.
+// * For complex methods/classes: Include detailed descriptions of parameters (`@param`),
+//   return values (`@return`), and exceptions (`@throws`).
+// * Follow standard Javadoc conventions.
+//   ```java
+//   /**
+//    * Single-line summary.
+//    *
+//    * More detailed description, if necessary.
+//    *
+//    * @param param1 The first parameter.
+//    * @param param2 The second parameter.
+//    * @return The return value. True for success, False otherwise.
+//    * @throws IllegalArgumentException If {@code param2} is invalid.
+//    */
+//   public boolean myMethod(int param1, String param2) throws IllegalArgumentException {
+//       // method body here
+//       return true; // Example return
+//   }
+//   ```
+
+// ## Type Hints (Generics)
+// * Utilize generics extensively: Generics improve type safety and reduce the need for casting.
+// * Be explicit with type parameters.
+
+// ## Comments
+// * Write clear and concise comments using `//` for single-line comments and `/* ... */` or
+//   `/** ... */` for multi-line comments.
+// * Explain the "why" behind the code, not just the "what".
+// * Comment sparingly: Well-written code should be self-documenting where possible.
+// * Use complete sentences for block comments.
+
+// ## Logging
+// * Use a standard logging framework: Company X uses [Specify framework, e.g., SLF4j with Logback/Log4j2].
+// * Log at appropriate levels: TRACE, DEBUG, INFO, WARN, ERROR
+// * Provide context: Include relevant information in log messages to aid debugging.
+
+// ## Error Handling
+// * Use specific exception types: Avoid using broad exceptions like `Exception`.
+// * Handle exceptions gracefully: Provide informative error messages and avoid program termination.
+// * Use `try...catch` blocks: Isolate code that might throw exceptions.
+// * Consider using checked vs. unchecked exceptions appropriately.
+
+// Tooling
+// * Code formatter: [Specify formatter, e.g., IntelliJ IDEA's built-in formatter, Google Java Format] - Enforces consistent formatting automatically.
+// * Linter/Static Analysis: [Specify tools, e.g., SonarQube, Checkstyle, SpotBugs] - Identifies potential issues and style violations.
