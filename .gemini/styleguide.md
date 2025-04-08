@@ -1,18 +1,18 @@
-// Company X Java Style Guide
+Company X Java Style Guide
 
-// Introduction
-// This style guide outlines the coding conventions for Java code developed at Company X.
-// It's based on standard Java conventions and best practices, with some modifications
-// to address specific needs and preferences within our organization.
+ Introduction
+ This style guide outlines the coding conventions for Java code developed at Company X.
+ It's based on standard Java conventions and best practices, with some modifications
+ to address specific needs and preferences within our organization.
 
-// Key Principles
+ Key Principles
  * Readability: Code should be easy to understand for all team members.
  * Maintainability: Code should be easy to modify and extend.
  * Consistency: Adhering to a consistent style across all projects improves collaboration and reduces errors.
  * Performance: While readability is paramount, code should be efficient.
 
-// Deviations from Standard Java Conventions (if any - explicitly mention them here)
-//
+Deviations from Standard Java Conventions (if any - explicitly mention them here)
+
  ## Line Length
  * Maximum line length: 100 characters (aligning with the Python guide).
      * Modern screens allow for wider lines, improving code readability in many cases.
